@@ -1,9 +1,17 @@
-tiktok-engagement
+Predicting TikTok video engagement using trending metadata
 ==============================
 
-Predicting TikTok video engagement using trending metadata
-
 Project Organization
+
+Sprint 1
+
+In Sprint 1, I mainly focused on setting up the project and making sure I understood the problem I wanted to solve. My goal for this capstone is to figure out what influences engagement on trending TikTok videos using the metadata that gets scraped from the platform. I spent time looking through the raw JSON data, identifying which fields looked useful, and planning out how I would clean and analyze it later. This sprint was more about organizing the project structure (using cookiecutter), confirming the dataset I would use, and outlining the direction I wanted the project to go. It helped me see that the data was definitely workable and that the project was realistic.
+
+Sprint 2
+
+Sprint 2 was where I actually started working with the data. I built a full cleaning script that loads the raw trending.json file, flattens the nested fields, handles missing values, and creates new features like caption length, hashtag count, engagement, and engagement rate. This gave me a clean dataset to use for analysis.
+After cleaning, I created an EDA notebook to explore the data. I looked at distributions, correlations, and relationships between different variables. The biggest takeaway was that play count has the strongest connection to engagement, especially when plotted on a log scale. Caption length and hashtag count didn’t show meaningful relationships with engagement, which surprised me because I expected hashtags to matter more. Overall, Sprint 2 helped me understand the dataset on a deeper level and showed me which features might actually be useful for modeling. It also gave me a clearer idea of what challenges I’ll face going into Sprint 3, especially with the data being so skewed toward viral videos.
+
 ------------
 
     ├── LICENSE
