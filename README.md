@@ -12,6 +12,10 @@ Sprint 2
 Sprint 2 was where I actually started working with the data. I built a full cleaning script that loads the raw trending.json file, flattens the nested fields, handles missing values, and creates new features like caption length, hashtag count, engagement, and engagement rate. This gave me a clean dataset to use for analysis.
 After cleaning, I created an EDA notebook to explore the data. I looked at distributions, correlations, and relationships between different variables. The biggest takeaway was that play count has the strongest connection to engagement, especially when plotted on a log scale. Caption length and hashtag count didn’t show meaningful relationships with engagement, which surprised me because I expected hashtags to matter more. Overall, Sprint 2 helped me understand the dataset on a deeper level and showed me which features might actually be useful for modeling. It also gave me a clearer idea of what challenges I’ll face going into Sprint 3, especially with the data being so skewed toward viral videos.
 
+Sprint 3
+
+In Sprint 3, I focused on building and evaluating predictive models for TikTok video engagement. Using the cleaned dataset from Sprint 2, I created baseline, linear regression, and random forest regression models to compare performance and understand which features drive engagement. I split the data into training and test sets and evaluated models using RMSE, MAE, and R². The baseline and linear regression models performed poorly, confirming that engagement is not well explained by linear relationships alone. The random forest model performed significantly better and captured nonlinear patterns in the data. Feature importance analysis showed that play count overwhelmingly dominates engagement prediction, while caption length, hashtag count, video duration, and verification status contribute only marginally. These results align closely with the exploratory findings from Sprint 2.
+
 ------------
 
     ├── LICENSE
